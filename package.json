@@ -1,0 +1,20 @@
+{
+  "name": "sky",
+  "version": "1.0.0",
+  "description": "software diseñado para el divulgar diferentes sitios del mundo para pasar un rato agradable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git pull origin main"
+  },
+  "keywords": [
+    "diseñoWeb",
+    "software",
+    "diseño"
+  ],
+  "author": "Davinson vanegas <davidsonvanegas27@gmail.com>",
+  "license": "MIT"
+}
