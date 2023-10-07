@@ -127,7 +127,7 @@ nav ul li{
 }
 
 .carousel a:hover{
-    background-color: var(--azul);
+    background-color: var(--sombra);
     transform: scale(.90);
     transition: all .40s ease-in-out;
     border-radius: 50%;
@@ -166,7 +166,7 @@ nav ul li{
 .portfolio  .container-list{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0px 20rem;
     margin: 50px 20px;
 }
@@ -346,7 +346,22 @@ nav ul li{
     line-height: 22px;
     max-height: 52rem;
     overflow: hidden;
+    transition: all .30s ease-in-out;
+    transform: scale(1);
 
+}
+
+.container-follow article:hover{
+    translate: 0px -20px;
+    transform: scale(1.1);
+    transition: all .40s ease;
+    color: var(--orange);
+}
+
+
+.container-follow article:hover .containerNum span{
+    background-color: var(--orange);
+    transform: scale(1.1)
 }
 
 .container-follow article img{
@@ -370,6 +385,7 @@ nav ul li{
     border-radius: 50%;
     right:0px;
     top: 4px;
+    transition: all .30s ease-in-out;
 }
 
 .container-follow article h4{
@@ -387,7 +403,7 @@ nav ul li{
 
 /*banner*/
 .banner-property{
-    background-image: url(../img/bnnrglb-parllx.jpeg);
+    background-image: url(../assets/img/bnnrglb-parllx.jpeg);
     background-attachment: fixed;
     height: 70vh;
     background-position:top;
@@ -501,25 +517,15 @@ nav ul li{
     box-shadow: 0px 1px 8px var(--azul);
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
-    transition: all .30s ease-in-out;
+    transition: all .40s ease-in-out;
 }
 
 
-.container-services .tarjeta .izquierda:hover{
-    translate: -20px -20px;
-    background-color: var(--orange);
-    color: var(--white);
-}
-
-.container-services .tarjeta .medio:hover{
+.container-services .tarjeta .izquierda:hover,
+.container-services .tarjeta .medio:hover,
+.container-services .tarjeta .derecha:hover{
     translate: 0px -20px;
     background-color: var(--azul);
-    color: var(--white);
-}
-
-.container-services .tarjeta .derecha:hover{
-    translate: 20px -20px;
-    background-color: var(--orange);
     color: var(--white);
 }
 
@@ -558,20 +564,72 @@ nav ul li{
     font-size: 1.7rem;
 }
 
-.tarjeta a:hover{
+.izquierda:hover h4,
+.derecha:hover h4,
+.medio:hover h4,
+.izquierda a,
+.derecha a,
+.medio a{
+    background-color: var(--white);
+    border-radius: 5px;
     color: var(--black);
-    background-color: #ffffff6c;
+    transition: all .30s ease-in-out;
+}
+
+.izquierda a:hover,
+.derecha a:hover,
+.medio a:hover{
+    transform: scale(.90);
+    transform : translate(20px ,10%);
+    border: 1px solid var(--white);
+    background-image: linear-gradient(var(--azul),var(--sombra));
+    transition: all .30s ease-in-out;
+
 }
 
 
 /*clientes*/
+.container-clientes{
+    text-align: center;
+    background-color: var(--sombra);
+    padding: 6rem 0px;
+}
+
+.container-clientes .span{
+    display: block;
+    color: var(--orange);
+    font-size:2rem;
+    font-weight: 600;
+}
+
+.container-clientes h4{
+    font-size: 3.3rem;
+    font-weight: 900;
+    margin-bottom: 7rem;
+}
+
 .container-clientes div{
+    display: flex;
     width: 100%;
+    justify-content: center;
+    margin: 0px;
+
+}
+
+.container-clientes img{
+    width: 250px;
+}
+
+.container-clientes .arrow-left,
+.container-clientes .arrow-right{
+    color: var(--orange);
 }
 
 /*agentes*/
 .container-agents div{
     width: 100%;
 }
+
+
 
 
