@@ -47,10 +47,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300;1,400&display=swap"
         rel="stylesheet">
 
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
-    <!-- Latest compiled and minified CSS -->
+    <!-- link para el css bootstrap 3.4.1-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -67,7 +64,8 @@
     <!-- ... -->
 
     <!--estilos propios-->
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/styles/style_desktop.css">
+
 
 
     <!-- link de jquery -->
@@ -79,7 +77,7 @@
 
     <header>
 
-        <aside class="row">
+        <aside class="row inactive">
             <div class="col-md-6 container-redes">
                 <ul>
                     <li><img src="../assets/img/icc-fb.svg" alt="Logo de facebook" loading="lazy">
@@ -101,10 +99,11 @@
         </aside>
 
         <nav class="row">
-            <div class="col-md-2">
-                <img src="../assets/img/logo.svg" alt="Logo de la empresa SkyconsulTants" loading="lazy">
+            <div class="col-md-2 col-xs-12 menuHam">
+                <a href="."><img src="../assets/img/logo.svg" alt="Logo de la empresa SkyconsulTants" loading="lazy"></a>
+                <span class="material-symbols-outlined">menu</span>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 inactive">
                 <ul>
                     <li class="home"><a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
@@ -113,7 +112,7 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 inactive">
                 <a href="#">Call Us Nomi</a><br>
                 <span class="phone">(407)734-3755-3755 se habla español</span>
             </div>
@@ -288,7 +287,10 @@
                 </div>
                 <a href="#">Discover Our Services</a>
             </article>
-            <img src="../assets/img/imgrgt-abts.png" alt="Hotel turistico en la playa" loading="lazy" class="col-md-6">
+            <div class="col-md-6">
+                <img src="../assets/img/imgrgt-abts.png" alt="Hotel turistico en la playa" loading="lazy" class="inactive">
+            </div>
+
         </section>
 
         <section class="container-follow">
@@ -356,8 +358,8 @@
 
         <section class="container-contactUs">
             <div class="row containerBase">
-                <img src="../assets/img/imcol-rgt-buyrs.png" alt="Casa de reposo en new york" class="col-md-6" loading="lazy">
-                <div class="col-md-6">
+                <img src="../assets/img/imcol-rgt-buyrs.png" alt="Casa de reposo en new york" class="col-md-6 col-xs-12" loading="lazy">
+                <div class="col-md-6 col-xs-12">
                     <span>Our Clients</span>
                     <h4>We value <br>Relationships</h4>
                     <span>T.wixon</span>
@@ -377,7 +379,7 @@
             <article class="col-md-3">
                 <h5>Our blog post</h5>
                 <p>Lastest News & Articles</p>
-                <p>
+                <p class="infoText">
                     we'd love to talk to you today About
                     managing your property
                 </p>
@@ -425,15 +427,13 @@
         <section class="container-clientes">
             <span class="span">Our happy clients</span>
             <h4>Making Dreams Come True</h4>
-            <div class="row">
-                <img src="../assets/img/familia1.jpg" alt="Clientes satifechos" loading="lazy" class="col-md-2">
-                <img src="../assets/img/familia2.jpg" alt="Clientes satifechos" loading="lazy" class="col-md-2">
-                <img src="../assets/img/familia3.jpg" alt="Clientes satifechos" loading="lazy" class="col-md-2">
-                <img src="../assets/img/familia4.jpg" alt="Clientes satifechos" loading="lazy" class="col-md-2">
-                <img src="../assets/img/familia5.jpg" alt="Clientes satifechos" loading="lazy" class="col-md-2">
+            <div>
+                <img src="../assets/img/familia1.jpg" alt="Clientes satifechos" loading="lazy">
+                <img src="../assets/img/familia2.jpg" alt="Clientes satifechos" loading="lazy">
+                <img src="../assets/img/familia3.jpg" alt="Clientes satifechos" loading="lazy">
+                <img src="../assets/img/familia4.jpg" alt="Clientes satifechos" loading="lazy">
+                <img src="../assets/img/familia5.jpg" alt="Clientes satifechos" loading="lazy">
             </div>
-            <span class="material-symbols-outlined arrow-left"> Arrow_Back_iOS</span>
-            <span class="material-symbols-outlined arrow-right">Arrow_Forward_iOS</span>
         </section>
 
         <section class="container-agents">

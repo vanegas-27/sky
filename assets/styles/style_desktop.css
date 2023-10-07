@@ -30,6 +30,25 @@ img{
     width: 100%;
 }
 
+.menuHam{
+    display: flex;
+    justify-content: space-between;
+    color: var(--orange);
+}
+
+.menuHam span{
+    display: none;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: all .30s ease-in-out;
+}
+
+.menuHam a:hover,
+.menuHam span:hover{
+    background-color:transparent;
+    transform: scale(1.1);
+}
+
 
 .container-redes img{
     width: 2rem;
@@ -39,7 +58,6 @@ img{
 
 a{
     font-size: 1.5rem;
-
     color: var(--white);
     text-decoration: none;
     text-decoration: none;
@@ -121,7 +139,7 @@ nav ul li{
 }
 
 .carousel{
-    margin-top: 8.5em;
+    margin-top: 60px;
     z-index: 1;
     overflow: hidden;
 }
@@ -135,8 +153,8 @@ nav ul li{
 }
 
 .portfolio{
-    width: 97vw;
-    padding: 2rem 13rem;
+    padding: 2rem 3rem;
+    margin: 0px auto;
 }
 
 .descrip{
@@ -166,15 +184,13 @@ nav ul li{
 .portfolio  .container-list{
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 20rem;
-    margin: 50px 20px;
+    justify-content: space-evenly;
+    margin: 50px auto;
 }
 
 .portfolio ul .list:nth-child(1){
     background-color: var(--orange);
     color: var(--black);
-    padding: 2px 8px;
     transition: all .40s ease-in-out;
 
     color: var(--white);
@@ -182,11 +198,11 @@ nav ul li{
 
 .portfolio ul .list{
     color: var(--black);
-    padding: 2px 8px;
     transition: all .40s ease-in-out;
     font-size: 1.8rem;
     cursor: pointer;
     background-color: var(--white);
+    padding: 5px 5px;
 }
 
 .portfolio ul .list:hover{
@@ -227,6 +243,7 @@ nav ul li{
 .conatiner-carts-casas ul{
     display: flex;
     list-style: none;
+    justify-content: center;
     margin-top: 20px;
     padding: 0px 10px;
     text-align: center;
@@ -237,6 +254,7 @@ nav ul li{
     margin-right: 20px;
     font-size: 1.3rem;
     color: #80878d;
+    padding: 5px 3%;
 }
 
 
@@ -275,9 +293,9 @@ nav ul li{
 }
 
 .container-aboutUs{
-    margin: 10px auto;
+    margin: auto;
     background-color: var(--white);
-    padding: 5rem 12rem;
+    padding: 2rem 3rem;
 }
 
 .container-aboutUs h3{
@@ -311,9 +329,10 @@ nav ul li{
 
 .container-aboutUs a{
     position: relative;
+    display: table;
     background-color: var(--orange);
     padding: 10px;
-    top: 1.5em;
+
 }
 
 .container-aboutUs li img{
@@ -325,7 +344,7 @@ nav ul li{
 .container-follow{
     width: 100%;
     text-align: center;
-    padding: 6rem 15rem;
+    padding: 2rem 3rem;
 }
 
 .container-follow .title-follow{
@@ -344,6 +363,7 @@ nav ul li{
 .container-follow article{
     padding: 10px 15px;
     line-height: 22px;
+    margin: 20px auto;
     max-height: 52rem;
     overflow: hidden;
     transition: all .30s ease-in-out;
@@ -403,7 +423,7 @@ nav ul li{
 
 /*banner*/
 .banner-property{
-    background-image: url(../assets/img/bnnrglb-parllx.jpeg);
+    background-image: url(../../assets/img/bnnrglb-parllx.jpeg);
     background-attachment: fixed;
     height: 70vh;
     background-position:top;
@@ -429,15 +449,16 @@ nav ul li{
 
 .container-contactUs{
     width: 100%;
-    padding: 8rem 15rem;
+    padding: 2rem 3rem;
     background-color: var(--white);
 }
 
+
 .containerBase{
     background-color: var(--white);
-    height: 560px;
     overflow: hidden;
-
+    height: 90vh;
+    margin: 0px auto;
 }
 
 .containerBase div{
@@ -445,7 +466,7 @@ nav ul li{
 }
 
 .containerBase img{
-    padding: 0px;
+    object-fit: fill;
 }
 
 .containerBase span:nth-child(1){
@@ -484,15 +505,16 @@ nav ul li{
 
 /*services*/
 .container-services{
+    margin: 0px auto;
     width: 100%;
     padding: 5rem 5rem;
-    /* background-color: var(--orange); */
+    background-color: var(--orange);
 }
 
 
 .container-services h5{
     font-size: 1.6rem;
-    color: var(--orange);
+    color: var(--azul);
 }
 
 .container-services p:nth-child(2){
@@ -500,8 +522,14 @@ nav ul li{
     font-weight: 800;
 }
 
+.container-services .infoText{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 5rem;
+}
+
 .container-services .all{
-    background-color: var(--orange);
+    background-color: var(--azul);
     display: table;
     margin-top: 2.3rem;
     padding: 8px 15px;
@@ -510,6 +538,7 @@ nav ul li{
 .container-services .tarjeta{
     min-height: 35rem;
     padding: 0px 8px;
+    margin: 30px auto;
 }
 
 .container-services .tarjeta div{
@@ -531,8 +560,9 @@ nav ul li{
 
 .container-services .tarjeta img{
     width: 100%;
-    min-height: 20rem;
-    object-fit: fill;
+    height: 19rem;
+    min-height: 15rem;
+    object-fit: cover;
 }
 
 .tarjeta{
@@ -581,7 +611,6 @@ nav ul li{
 .medio a:hover{
     transform: scale(.90);
     transform : translate(20px ,10%);
-    border: 1px solid var(--white);
     background-image: linear-gradient(var(--azul),var(--sombra));
     transition: all .30s ease-in-out;
 
@@ -610,24 +639,53 @@ nav ul li{
 
 .container-clientes div{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
-    justify-content: center;
-    margin: 0px;
-
+    justify-content: space-evenly;
+    margin: auto auto;
 }
 
 .container-clientes img{
-    width: 250px;
-}
-
-.container-clientes .arrow-left,
-.container-clientes .arrow-right{
-    color: var(--orange);
+    width: 40px;
+    max-width: 60rem;
+    flex-basis: 27em;
+    flex-grow: 1;
+    margin: 1.7rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px var(--azul);
 }
 
 /*agentes*/
 .container-agents div{
     width: 100%;
+
+}
+
+@media(max-width:978px){
+
+    .inactive{
+        display: none!important;
+    }
+
+    .menuHam span{
+        display: block;
+    }
+
+    .containerBase{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .containerBase img{
+        object-fit: cover;
+        width: 100%;
+        height: 65vh;
+        max-width :80% ;
+    }
+
 }
 
 
