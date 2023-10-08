@@ -1,6 +1,6 @@
 {
   "name": "sky",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "software diseñado para el divulgar diferentes sitios del mundo para pasar un rato agradable",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git pull origin main"
+    "url": "https://github.com/vanegas-27/sky.git"
   },
   "keywords": [
     "diseñoWeb",

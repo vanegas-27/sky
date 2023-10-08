@@ -1,24 +1,24 @@
-:root{
-    --monserrate : 'Montserrat', sans-serif;
+:root {
+    --monserrate: 'Montserrat', sans-serif;
     --orange: #bd910b;
     --azul: #11314b;
     --white: #ecf0f3;
     --black: #000000;
-    --sombra : #a09f9f36;
+    --sombra: #a09f9f36;
 }
 
 
 /*estilos de google*/
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -26,17 +26,18 @@
     list-style: none;
     text-decoration: none;
 }
-img{
+
+img {
     width: 100%;
 }
 
-.menuHam{
+.menuHam {
     display: flex;
     justify-content: space-between;
     color: var(--orange);
 }
 
-.menuHam span{
+.menuHam span {
     display: none;
     font-size: 4rem;
     cursor: pointer;
@@ -44,30 +45,30 @@ img{
 }
 
 .menuHam a:hover,
-.menuHam span:hover{
-    background-color:transparent;
+.menuHam span:hover {
+    background-color: transparent;
     transform: scale(1.1);
 }
 
 
-.container-redes img{
+.container-redes img {
     width: 2rem;
     margin: 1rem;
 
 }
 
-a{
+a {
     font-size: 1.5rem;
     color: var(--white);
     text-decoration: none;
     text-decoration: none;
-    transition: all 0.30s ease-in ;
+    transition: all 0.30s ease-in;
     margin-right: 5px;
     padding: 5px 8px;
 }
 
 a:hover,
-.home a:hover{
+.home a:hover {
     background-color: var(--orange);
     transform: scale(.90);
     color: var(--white);
@@ -75,7 +76,7 @@ a:hover,
     border-radius: 20px;
 }
 
-header{
+header {
     background-color: var(--azul);
     padding: 8px 30px;
     position: fixed;
@@ -84,18 +85,18 @@ header{
     z-index: 2;
 }
 
-aside{
+aside {
     border-bottom: 1px solid var(--white);
     padding-top: 5px;
 }
 
-aside ul li{
+aside ul li {
     display: inline-block;
     margin-right: 10px;
     font-family: var(--monserrate);
 }
 
-aside ul li img{
+aside ul li img {
     display: inline-block;
     vertical-align: middle;
     width: 20px;
@@ -103,48 +104,48 @@ aside ul li img{
     object-fit: contain;
 }
 
-.linkder{
+.linkder {
     text-align: right;
 }
 
-nav{
+nav {
     margin: 0px 20px;
     padding: 3px;
     display: flex;
     align-items: center;
 }
 
-nav img{
+nav img {
     width: 200px;
 }
 
-nav ul{
+nav ul {
     display: table;
     margin: 0px auto 0px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin: 0px 10px;
 }
 
-.home a{
+.home a {
     background-color: var(--orange);
 }
 
-.phone{
+.phone {
     font-size: 1.4rem;
 
     color: var(--white);
 }
 
-.carousel{
+.carousel {
     margin-top: 60px;
     z-index: 1;
     overflow: hidden;
 }
 
-.carousel a:hover{
+.carousel a:hover {
     background-color: var(--sombra);
     transform: scale(.90);
     transition: all .40s ease-in-out;
@@ -152,43 +153,43 @@ nav ul li{
     transform: scale(1.5);
 }
 
-.portfolio{
+.portfolio {
     padding: 2rem 3rem;
     margin: 0px auto;
 }
 
-.descrip{
+.descrip {
     margin: 1.5rem 2rem;
     text-align: center;
 
 }
 
-.descrip span{
+.descrip span {
     color: var(--orange);
     font-family: var(--monserrate);
-    font-weight:600;
+    font-weight: 600;
     font-size: 1.6rem;
 }
 
-.descrip h2{
+.descrip h2 {
     font-weight: 800;
     margin-top: 10px;
 }
 
-.descrip p{
+.descrip p {
     color: var(--black);
     font-weight: 300;
     font-size: 1.6rem;
 }
 
-.portfolio  .container-list{
+.portfolio .container-list {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     margin: 50px auto;
 }
 
-.portfolio ul .list:nth-child(1){
+.portfolio ul .list:nth-child(1) {
     background-color: var(--orange);
     color: var(--black);
     transition: all .40s ease-in-out;
@@ -196,7 +197,7 @@ nav ul li{
     color: var(--white);
 }
 
-.portfolio ul .list{
+.portfolio ul .list {
     color: var(--black);
     transition: all .40s ease-in-out;
     font-size: 1.8rem;
@@ -205,17 +206,17 @@ nav ul li{
     padding: 5px 5px;
 }
 
-.portfolio ul .list:hover{
-    background-color:var(--orange);
+.portfolio ul .list:hover {
+    background-color: var(--orange);
     border-radius: 15px;
 }
 
-.conatiner-carts-casas{
+.conatiner-carts-casas {
     border-top: 1px solid var(--black)54;
     padding-top: 2rem;
 }
 
-.conatiner-carts-casas .precio{
+.conatiner-carts-casas .precio {
     background-color: var(--azul);
     display: block;
     color: var(--white);
@@ -224,15 +225,15 @@ nav ul li{
     padding: 4px 0px;
 }
 
-.casas h2{
+.casas h2 {
     font-family: var(--monserrate);
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 15px ;
+    margin-bottom: 15px;
     min-height: 45px;
 }
 
-.casas img{
+.casas img {
     width: 100%;
     height: 20rem;
     object-fit: cover;
@@ -240,7 +241,7 @@ nav ul li{
     box-shadow: 1px 1px 7px var(--black)b7;
 }
 
-.conatiner-carts-casas ul{
+.conatiner-carts-casas ul {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -250,7 +251,7 @@ nav ul li{
 
 }
 
-.conatiner-carts-casas ul li{
+.conatiner-carts-casas ul li {
     margin-right: 20px;
     font-size: 1.3rem;
     color: #80878d;
@@ -258,76 +259,76 @@ nav ul li{
 }
 
 
-.conatiner-carts-casas ul li:nth-child(2){
+.conatiner-carts-casas ul li:nth-child(2) {
     border-right: 1px solid rgba(56, 49, 49, 0.39);
     border-left: 1px solid rgba(56, 49, 49, 0.39);
 }
 
-.conatiner-carts-casas .self{
+.conatiner-carts-casas .self {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 0px 10px 0px;
 }
 
-.conatiner-carts-casas .self img{
+.conatiner-carts-casas .self img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
 
-.conatiner-carts-casas h4{
+.conatiner-carts-casas h4 {
     font-size: 1.5rem;
     text-align: end;
 }
 
-.more{
+.more {
     display: table;
     background-color: var(--orange);
     margin: 20px auto;
 }
 
-.more:hover{
+.more:hover {
     background-color: var(--orange);
     transform: scale(.90);
 }
 
-.container-aboutUs{
+.container-aboutUs {
     margin: auto;
     background-color: var(--white);
     padding: 2rem 3rem;
 }
 
-.container-aboutUs h3{
+.container-aboutUs h3 {
     font-size: 3rem;
     font-weight: 900;
 }
 
-.container-aboutUs p:nth-child(2){
+.container-aboutUs p:nth-child(2) {
     font-size: 2.3rem;
     color: var(--orange);
     font-weight: 500;
 }
 
-.container-aboutUs p{
+.container-aboutUs p {
     font-size: 1.8rem;
     margin-bottom: 1.8em;
     line-height: 22px;
 
 }
 
-.beneficios{
+.beneficios {
     display: flex;
 }
 
-.beneficios ul{
+.beneficios ul {
     margin: 20px 50px 20px 0px;
     line-height: 3.3em;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.container-aboutUs a{
+.container-aboutUs a {
     position: relative;
     display: table;
     background-color: var(--orange);
@@ -335,32 +336,32 @@ nav ul li{
 
 }
 
-.container-aboutUs li img{
+.container-aboutUs li img {
     width: 20px;
     margin-right: 7px;
 }
 
 
-.container-follow{
+.container-follow {
     width: 100%;
     text-align: center;
     padding: 2rem 3rem;
 }
 
-.container-follow .title-follow{
+.container-follow .title-follow {
     color: var(--orange);
     font-size: 2rem;
     font-weight: 600;
 }
 
-.container-follow h3{
+.container-follow h3 {
     font-weight: 900;
     font-size: 3rem;
     margin-bottom: 6rem;
     margin-top: 5px;
 }
 
-.container-follow article{
+.container-follow article {
     padding: 10px 15px;
     line-height: 22px;
     margin: 20px auto;
@@ -371,7 +372,7 @@ nav ul li{
 
 }
 
-.container-follow article:hover{
+.container-follow article:hover {
     translate: 0px -20px;
     transform: scale(1.1);
     transition: all .40s ease;
@@ -379,23 +380,23 @@ nav ul li{
 }
 
 
-.container-follow article:hover .containerNum span{
+.container-follow article:hover .containerNum span {
     background-color: var(--orange);
     transform: scale(1.1)
 }
 
-.container-follow article img{
+.container-follow article img {
     width: 17rem;
 }
 
-.containerNum{
+.containerNum {
     position: relative;
     display: table;
     margin: 0 auto;
 }
 
 
-.container-follow article span{
+.container-follow article span {
     position: absolute;
     background-color: var(--azul);
     width: 40px;
@@ -403,17 +404,17 @@ nav ul li{
     padding: 9px;
     color: var(--white);
     border-radius: 50%;
-    right:0px;
+    right: 0px;
     top: 4px;
     transition: all .30s ease-in-out;
 }
 
-.container-follow article h4{
+.container-follow article h4 {
     font-weight: 600;
     margin: 20px 0px;
 }
 
-.container-follow article p{
+.container-follow article p {
     font-size: small;
     color: #696e72;
 }
@@ -422,11 +423,11 @@ nav ul li{
 
 
 /*banner*/
-.banner-property{
+.banner-property {
     background-image: url(../../assets/img/bnnrglb-parllx.jpeg);
     background-attachment: fixed;
     height: 70vh;
-    background-position:top;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -435,41 +436,40 @@ nav ul li{
     align-items: center;
 }
 
-.banner-property p{
+.banner-property p {
     font-size: 5rem;
     color: var(--white);
     font-weight: 600;
 }
 
-.banner-property a{
+.banner-property a {
     background-color: var(--orange);
     padding: 10px 12px;
     border-radius: 5px;
 }
 
-.container-contactUs{
+.container-contactUs {
     width: 100%;
-    padding: 2rem 3rem;
     background-color: var(--white);
 }
 
 
-.containerBase{
+.containerBase {
     background-color: var(--white);
     overflow: hidden;
     height: 90vh;
     margin: 0px auto;
 }
 
-.containerBase div{
+.containerBase div {
     padding-left: 5rem;
 }
 
-.containerBase img{
+.containerBase img {
     object-fit: fill;
 }
 
-.containerBase span:nth-child(1){
+.containerBase span:nth-child(1) {
     color: var(--orange);
     display: block;
     font-weight: 600;
@@ -477,26 +477,26 @@ nav ul li{
     font-size: 1.6rem;
 }
 
-.containerBase h4{
+.containerBase h4 {
     font-size: 4rem;
     font-weight: 800;
 
 }
 
-.containerBase span:nth-child(3){
+.containerBase span:nth-child(3) {
     color: var(--orange);
     font-size: 2.2rem;
     font-weight: 300;
     margin: 10px 0px;
 }
 
-.containerBase p{
+.containerBase p {
     font-size: 2rem;
-    font-weight:100;
+    font-weight: 100;
     margin-top: 2.3rem;
 }
 
-.containerBase a{
+.containerBase a {
     display: inline-block;
     background-color: var(--orange);
     margin: 30px 0px;
@@ -504,7 +504,7 @@ nav ul li{
 }
 
 /*services*/
-.container-services{
+.container-services {
     margin: 0px auto;
     width: 100%;
     padding: 5rem 5rem;
@@ -512,36 +512,36 @@ nav ul li{
 }
 
 
-.container-services h5{
+.container-services h5 {
     font-size: 1.6rem;
     color: var(--azul);
 }
 
-.container-services p:nth-child(2){
+.container-services p:nth-child(2) {
     font-size: 3.4rem;
     font-weight: 800;
 }
 
-.container-services .infoText{
+.container-services .infoText {
     font-size: 2rem;
     color: var(--white);
     margin-bottom: 5rem;
 }
 
-.container-services .all{
+.container-services .all {
     background-color: var(--azul);
     display: table;
     margin-top: 2.3rem;
     padding: 8px 15px;
 }
 
-.container-services .tarjeta{
+.container-services .tarjeta {
     min-height: 35rem;
     padding: 0px 8px;
     margin: 30px auto;
 }
 
-.container-services .tarjeta div{
+.container-services .tarjeta div {
     background-color: var(--sombra);
     box-shadow: 0px 1px 8px var(--azul);
     border-radius: 10px 10px 0px 0px;
@@ -552,42 +552,42 @@ nav ul li{
 
 .container-services .tarjeta .izquierda:hover,
 .container-services .tarjeta .medio:hover,
-.container-services .tarjeta .derecha:hover{
+.container-services .tarjeta .derecha:hover {
     translate: 0px -20px;
     background-color: var(--azul);
     color: var(--white);
 }
 
-.container-services .tarjeta img{
+.container-services .tarjeta img {
     width: 100%;
     height: 19rem;
     min-height: 15rem;
     object-fit: cover;
 }
 
-.tarjeta{
+.tarjeta {
     position: relative;
 }
 
-.tarjeta h4{
+.tarjeta h4 {
     display: table;
-    position:absolute;
+    position: absolute;
     background-color: var(--orange);
     padding: 8px 10px;
     top: 17rem;
     color: var(--white);
     left: 2rem;
-    font-weight:500;
+    font-weight: 500;
 }
 
-.tarjeta p{
+.tarjeta p {
     margin-top: 3rem;
     padding: 0px 20px;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-.tarjeta a{
+.tarjeta a {
     display: table;
     margin: 20px 10px;
     color: rgb(90, 89, 89);
@@ -599,7 +599,7 @@ nav ul li{
 .medio:hover h4,
 .izquierda a,
 .derecha a,
-.medio a{
+.medio a {
     background-color: var(--white);
     border-radius: 5px;
     color: var(--black);
@@ -608,36 +608,36 @@ nav ul li{
 
 .izquierda a:hover,
 .derecha a:hover,
-.medio a:hover{
+.medio a:hover {
     transform: scale(.90);
-    transform : translate(20px ,10%);
-    background-image: linear-gradient(var(--azul),var(--sombra));
+    transform: translate(20px, 10%);
+    background-image: linear-gradient(var(--azul), var(--sombra));
     transition: all .30s ease-in-out;
 
 }
 
 
 /*clientes*/
-.container-clientes{
+.container-clientes {
     text-align: center;
     background-color: var(--sombra);
     padding: 6rem 0px;
 }
 
-.container-clientes .span{
+.container-clientes .span {
     display: block;
     color: var(--orange);
-    font-size:2rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
-.container-clientes h4{
+.container-clientes h4 {
     font-size: 3.3rem;
     font-weight: 900;
     margin-bottom: 7rem;
 }
 
-.container-clientes div{
+.container-clientes div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -646,7 +646,7 @@ nav ul li{
     margin: auto auto;
 }
 
-.container-clientes img{
+.container-clientes img {
     width: 40px;
     max-width: 60rem;
     flex-basis: 27em;
@@ -657,37 +657,133 @@ nav ul li{
 }
 
 /*agentes*/
-.container-agents div{
+.container-agents{
+   margin: 0px auto;
+}
+
+
+.container-agents span{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--orange);
+    font-weight: 500;
+}
+
+.container-agents h4{
+    font-size: 3.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.container-agents p{
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 26px;
+    padding: 0px 10px;
+}
+
+.container-agents div {
     width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-agents .box-agents{
+    width: 27rem;
+    min-width: 25rem;
+    max-width: 30rem;
+    height: 400px;
+    margin: 15px;
+    background-color: var(--sombra);
+    padding: 0px 0px 10px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px var(--azul);
+}
+
+.container-agents .box-agents .agente{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: 0px -65px;
+}
+
+.container-agents .box-agents h5{
+    font-size: 2.4rem;
+    padding: 10px 5px 0px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.container-agents .box-agents span{
+    text-align: start;
+    padding: 0px 5px;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.container-agents .box-agents p{
+    text-align: start;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.container-agents .box-agents div{
+    justify-content: end;
+}
+.container-agents .box-agents a img{
+    width: 30px;
 
 }
 
-@media(max-width:978px){
+.container-agents .viewAgents{
+    display: table;
+    color: var(--white);
+    padding: 10px 15px;
+    background-color: var(--orange);
+    margin: 20px auto;
+}
 
-    .inactive{
-        display: none!important;
+footer{
+    background-color: var(--azul);
+    height: 10vh;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+@media(max-width:978px) {
+
+    .inactive {
+        display: none !important;
     }
 
-    .menuHam span{
+    .menuHam{
+        width: 100%;
+    }
+
+    .menuHam span {
         display: block;
     }
 
-    .containerBase{
+    .containerBase {
         align-items: center;
         display: flex;
         flex-direction: column;
         height: 100%;
     }
 
-    .containerBase img{
+    .containerBase img {
+        padding-top: 2rem;
+        border-radius: 40px;
         object-fit: cover;
-        width: 100%;
-        height: 65vh;
-        max-width :80% ;
+        width: 80vw;
+        height: 63vh;
+        max-width: 93%;
     }
 
 }
-
-
-
-
