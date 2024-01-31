@@ -16,5 +16,8 @@
     "diseño"
   ],
   "author": "Davinson vanegas <davidsonvanegas27@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

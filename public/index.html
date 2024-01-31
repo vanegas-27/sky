@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkyconsulTants | reserve con nosotros al mejor precio del mercado</title>
 
-
     <!-- link de jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--links de js-->
+    <script src="js/data.js"></script>
+    <script src="js/componentes.js"></script>
+    <script src="js/index.js"></script>
+
 
     <!--icon de empresa-->
     <link rel="apple-touch-icon"
@@ -68,8 +73,7 @@
     <!-- ... -->
 
     <!--estilos propios-->
-    <link rel="stylesheet" href="../assets/styles/style_desktop.css">
-
+    <link rel="stylesheet" type="text/css" href="css/style_desktop.css">
 
 
 </head>
@@ -81,17 +85,17 @@
         <aside class="row inactive">
             <div class="col-md-6 container-redes">
                 <ul>
-                    <li><img src="../assets/img/icc-fb.svg" alt="Logo de facebook" loading="lazy">
+                    <li><img src="/img/icc-fb.svg" alt="Logo de facebook" loading="lazy">
                         <a href="#">Facebook</a>
                     </li>
-                    <li><img src="../assets/img/icc-ins.svg" alt="Logo de instragram" loading="lazy">
+                    <li><img src="/img/icc-ins.svg" alt="Logo de instragram" loading="lazy">
                         <a href="#">instragram</a>
                     </li>
                     <li>
-                        <img src="../assets/img/icc-tw.svg" alt="Logo de twitter" loading="lazy">
+                        <img src="/img/icc-tw.svg" alt="Logo de twitter" loading="lazy">
                         <a href="#">twitter</a>
                     </li>
-                    <li><img src="../assets/img/icc-wp.svg" alt="Logo de whatsApp" loading="lazy"><a
+                    <li><img src="/img/icc-wp.svg" alt="Logo de whatsApp" loading="lazy"><a
                             href="#">whatsApp</a></li>
                 </ul>
             </div>
@@ -102,9 +106,30 @@
 
         <nav class="row">
             <div class="col-md-2  menuHam">
-                <a href="."><img src="../assets/img/logo.svg" alt="Logo de la empresa SkyconsulTants"
+                <a href="."><img src="img/logo.svg" alt="Logo de la empresa SkyconsulTants"
                         loading="lazy"></a>
-                <span class="material-symbols-outlined">menu</span>
+                <span class="material-symbols-outlined menu">menu</span>
+
+                <!--menu de menuHam-->
+                <div class="menuHam-list inactive">
+                    <ul class="navbar">
+                        <li><a href=".">Home</a></li>
+                        <li><a href=".">About Us</a></li>
+                        <li><a href=".">For buyers</a></li>
+                        <li><a href=".">For Sellers</a></li>
+                        <li><a href=".">Property Management</a></li>
+                        <li><a href=".">Blog</a></li>
+                        <li><a href=".">Contact Us</a></li>
+                        <li><a href=".">Resident Portal</a></li>
+                    </ul>
+                    <ul class="navRedes">
+                        <li><a href="#"></a><img src="/img/icc-fb.svg" alt="Logo de redes"></a></li>
+                        <li><a href="#"></a><img src="/img/icc-ins.svg" alt="Logo de redes"></a></li>
+                        <li><a href="#"></a><img src="/img/icc-tw.svg" alt="Logo de redes"></a></li>
+                        <li><a href="#"></a><img src="/img/icc-wp.svg" alt="Logo de redes"></a></li>
+                    </ul>
+                </div>
+
             </div>
             <div class="col-md-8 inactive">
                 <ul>
@@ -138,13 +163,13 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="../assets/img/banner-home.jpeg" alt="propiedad de los angeles" loading="lazy">
+                        <img src="/img/banner-home.jpeg" alt="propiedad de los angeles" loading="lazy">
                     </div>
                     <div class="item">
-                        <img src="../assets/img/banner-home2.jpeg" alt="propiedad de new york" loading="lazy">
+                        <img src="/img/banner-home2.jpeg" alt="propiedad de new york" loading="lazy">
                     </div>
                     <div class="item">
-                        <img src="../assets/img/banner-home3.jpeg" alt="propiedad de california" loading="lazy">
+                        <img src="/img/banner-home3.jpeg" alt="propiedad de california" loading="lazy">
                     </div>
                 </div>
 
@@ -182,69 +207,21 @@
 
             <div class="row conatiner-carts-casas">
 
-                <div class="col-md-3">
+                <!-- <div class="col-md-3 carts-casas">
                     <div class="casas">
                         <span class="precio">$19.000</span>
                         <h2>Paraiso natural en california</h2>
-                        <img src="../assets/img/casa1.jpeg" loading="lazy">
+                        <img src="/img/casa1.jpeg" loading="lazy">
                         <ul>
-                            <li>12 <span>Beds</span></li>
-                            <li>7 <span>Baths</span></li>
-                            <li>14,76 <span>SqFt</span></li>
+                            <li>12 Beds</li>
+                            <li>7 Baths</li>
+                            <li>14,76 SqFt</li>
                         </ul>
-                        <span class="self"><img src="../assets/img/camara-fotografica.png" loading="lazy"> (55)</span>
+                        <span class="self"><img src="/img/camara-fotografica.png" loading="lazy"> (55)</span>
                         <hr>
                         <h4>#465432345 | House</h4>
                     </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="casas">
-                        <span class="precio">$19.000</span>
-                        <h2>Descansa en un paraiso</h2>
-                        <img src="../assets/img/casa2.jpeg" loading="lazy">
-                        <ul>
-                            <li>12 <span>Beds</span></li>
-                            <li>7 <span>Baths</span></li>
-                            <li>14,76 <span>SqFt</span></li>
-                        </ul>
-                        <span class="self"><img src="../assets/img/camara-fotografica.png" loading="lazy"> (55)</span>
-                        <hr>
-                        <h4>#465432345 | House</h4>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="casas">
-                        <span class="precio">$19.000</span>
-                        <h2>La casa de tranquilidad pura</h2>
-                        <img src="../assets/img/casa3.jpeg" loading="lazy">
-                        <ul>
-                            <li>12 <span>Beds</span></li>
-                            <li>7 <span>Baths</span></li>
-                            <li>14,76 <span>SqFt</span></li>
-                        </ul>
-                        <span class="self"><img src="../assets/img/camara-fotografica.png" loading="lazy"> (55)</span>
-                        <hr>
-                        <h4>#465432345 | House</h4>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="casas">
-                        <span class="precio">$19.000</span>
-                        <h2>Sientete especial en nuestro hogar</h2>
-                        <img src="../assets/img/casa4.jpeg" loading="lazy">
-                        <ul>
-                            <li>12 <span>Beds</span></li>
-                            <li>7 <span>Baths</span></li>
-                            <li>14,76 <span>SqFt</span></li>
-                        </ul>
-                        <span class="self"><img src="../assets/img/camara-fotografica.png" loading="lazy"> (55)</span>
-                        <hr>
-                        <h4>#465432345 | House</h4>
-                    </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -273,41 +250,41 @@
                 </p>
                 <div class="beneficios">
                     <ul>
-                        <li><img src="../assets/img/icc-chks.svg" alt="chulito de color" loading="lazy">Faliling
+                        <li><img src="/img/icc-chks.svg" alt="chulito de color" loading="lazy">Faliling
                             Vacancies</li>
-                        <li><img src="../assets/img/icc-chks.svg" alt="chulito de color" loading="lazy">Advertising
+                        <li><img src="/img/icc-chks.svg" alt="chulito de color" loading="lazy">Advertising
                             Rentals
                         </li>
-                        <li><img src="../assets/img/icc-chks.svg" alt="chulito de color" loading="lazy">Applicstion
+                        <li><img src="/img/icc-chks.svg" alt="chulito de color" loading="lazy">Applicstion
                             Processing
                         </li>
                     </ul>
                     <ul>
-                        <li><img src="../assets/img/icc-chks.svg" alt="chulito de color" loading="lazy">Lease Signing
+                        <li><img src="/img/icc-chks.svg" alt="chulito de color" loading="lazy">Lease Signing
                         </li>
-                        <li><img src="../assets/img/icc-chks.svg" alt="chulito de color" loading="lazy">Maintenance
+                        <li><img src="/img/icc-chks.svg" alt="chulito de color" loading="lazy">Maintenance
                             Handiling
                         </li>
-                        <li><img src="../assets/img/icc-chks.svg" alt="chulito de color" loading="lazy">Rent Collection
+                        <li><img src="/img/icc-chks.svg" alt="chulito de color" loading="lazy">Rent Collection
                         </li>
                     </ul>
                 </div>
                 <a href="#">Discover Our Services</a>
             </article>
             <div class="col-md-6">
-                <img src="../assets/img/imgrgt-abts.png" alt="Hotel turistico en la playa" loading="lazy"
+                <img src="/img/imgrgt-abts.png" alt="Hotel turistico en la playa" loading="lazy"
                     class="inactive">
             </div>
-
         </section>
 
         <section class="container-follow">
             <span class="title-follow">How it works</span>
             <h3>Follow Easy Steps</h3>
-            <div class="row">
-                <article class="col-md-3">
+            <div class="row" id="containFollow">
+
+                <!-- <article class="col-md-3">
                     <div class="containerNum">
-                        <img src="../assets/img/logo.png" alt="logo de empresa" loading="lazy" />
+                        <img src="/img/logo.png" alt="logo de empresa" loading="lazy" />
                         <span>01</span>
                     </div>
                     <h4>Explore Our Listings</h4>
@@ -315,46 +292,7 @@
                         Are you looking to buy or sell a home
                         or are you looking for property management?
                     </p>
-                </article>
-
-                <article class="col-md-3">
-                    <div class="containerNum">
-                        <img src="../assets/img/imgdescp-stps.png" alt="sala con un mueble" loading="lazy" />
-                        <span>02</span>
-                    </div>
-                    <h4>Contact Us Today!</h4>
-                    <p>
-                        we can assist you with Your single
-                        family homes, multi-family developments,condos,
-                        duplexes and other specialized properties
-                    </p>
-                </article>
-
-                <article class="col-md-3">
-                    <div class="containerNum">
-                        <img src="../assets/img/Keys2.png" alt="llave de casa" loading="lazy" />
-                        <span>03</span>
-                    </div>
-                    <h4>Take Your Keys</h4>
-                    <p>
-                        our education and extensive knowledge
-                        in real estate allows us to properly guide
-                        from beginning to end.
-                    </p>
-                </article>
-
-                <article class="col-md-3">
-                    <div class="containerNum">
-                        <img src="../assets/img/live.png" alt="persona sonriendo" loading="lazy" />
-                        <span>04</span>
-                    </div>
-                    <h4>Live Happily</h4>
-                    <p>
-                        The Greatest joy is handing over Yourprofits
-                        from selling Your home or handing your new keys and saying
-                        welcome home!
-                    </p>
-                </article>
+                </article> -->
 
             </div>
         </section>
@@ -366,7 +304,7 @@
 
         <section class="container-contactUs">
             <div class="row containerBase">
-                <img src="../assets/img/imcol-rgt-buyrs.png" alt="Casa de reposo en new york" class="col-md-6 "
+                <img src="/img/imcol-rgt-buyrs.png" alt="Casa de reposo en new york" class="col-md-6 "
                     loading="lazy">
                 <div class="col-md-6 ">
                     <span>Our Clients</span>
@@ -397,7 +335,7 @@
 
             <article class="col-md-3 tarjeta">
                 <div class="izquierda">
-                    <img src="../assets/img/pexels-medhat-ayad-439227.jpg" alt="foto de articulo o servicio">
+                    <img src="/img/pexels-medhat-ayad-439227.jpg" alt="foto de articulo o servicio">
                     <h4>marzo 28 2023</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui illo a est eveniet vel commodi ea
@@ -409,7 +347,7 @@
 
             <article class="col-md-3 tarjeta">
                 <div class="medio">
-                    <img src="../assets/img/pexels-ivan-samkov-6789128 (1).jpg " alt="foto de articulo o servicio">
+                    <img src="/img/pexels-ivan-samkov-6789128 (1).jpg " alt="foto de articulo o servicio">
                     <h4>marzo 28 2023</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui illo a est eveniet vel commodi ea
@@ -421,7 +359,7 @@
 
             <article class="col-md-3 tarjeta">
                 <div class="derecha">
-                    <img src="../assets/img/pexels-rdne-stock-project-7464701.jpg" alt="foto de articulo o servicio">
+                    <img src="/img/pexels-rdne-stock-project-7464701.jpg" alt="foto de articulo o servicio">
                     <h4>marzo 28 2023</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui illo a est eveniet vel commodi ea
@@ -437,14 +375,14 @@
             <span class="span">Our happy clients</span>
             <h4>Making Dreams Come True</h4>
             <div>
-                <img src="../assets/img/familia1.jpg" alt="Clientes satifechos" loading="lazy">
-                <img src="../assets/img/familia5.jpg" alt="Clientes satifechos" loading="lazy">
-                <img src="../assets/img/familia4.jpg" alt="Clientes satifechos" loading="lazy" class="inactive">
-                <img src="../assets/img/familia6.jpg" alt="Clientes satifechos" loading="lazy" class="inactive">
-                <img src="../assets/img/familia7.jpg" alt="Clientes satifechos" loading="lazy">
-                <img src="../assets/img/familia8.jpg" alt="Clientes satifechos" loading="lazy" class="inactive">
-                <img src="../assets/img/familia10.jpg" alt="Clientes satifechos" loading="lazy" class="inactive">
-                <img src="../assets/img/familia11.jpg" alt="Clientes satifechos" loading="lazy">
+                <img src="/img/familia1.jpg" alt="Clientes satifechos" loading="lazy">
+                <img src="/img/familia5.jpg" alt="Clientes satifechos" loading="lazy">
+                <img src="/img/familia4.jpg" alt="Clientes satifechos" loading="lazy" class="inactive">
+                <img src="/img/familia6.jpg" alt="Clientes satifechos" loading="lazy" class="inactive">
+                <img src="/img/familia7.jpg" alt="Clientes satifechos" loading="lazy">
+                <img src="/img/familia8.jpg" alt="Clientes satifechos" loading="lazy" class="inactive">
+                <img src="/img/familia10.jpg" alt="Clientes satifechos" loading="lazy" class="inactive">
+                <img src="/img/familia11.jpg" alt="Clientes satifechos" loading="lazy">
             </div>
         </section>
 
@@ -460,7 +398,7 @@
             <div class="row">
 
                 <article class="col-md-3 col-sm-12 box-agents">
-                    <img src="../assets/img/agente1.jpg" alt="nuestros agentes" class="agente">
+                    <img src="/img/agente1.jpg" alt="nuestros agentes" class="agente">
                     <h5>Maria Jimenez</h5>
                     <span>Analista</span>
                     <p>
@@ -469,14 +407,14 @@
                         office-ph: 84098324
                     </p>
                     <div>
-                        <a href="mailto:davidsonvanegas27@gmail.com"><img src="../assets/img/correo-electronico.png"
-                            alt="mail"></a>
-                    <a href="#"><img src="../assets/img/llamar.png" alt="phone"></a>
+                        <a href="mailto:davidsonvanegas27@gmail.com"><img src="/img/correo-electronico.png"
+                                alt="mail"></a>
+                        <a href="#"><img src="/img/llamar.png" alt="phone"></a>
                     </div>
                 </article>
 
                 <article class="col-md-3 box-agents">
-                    <img src="../assets/img/agente3.jpg" alt="nuestros agentes" class="agente">
+                    <img src="/img/agente3.jpg" alt="nuestros agentes" class="agente">
                     <h5>David Mosquera</h5>
                     <span>Mercadro</span>
                     <p>
@@ -485,14 +423,14 @@
                         office-ph: 84098324
                     </p>
                     <div>
-                        <a href="mailto:davidsonvanegas27@gmail.com"><img src="../assets/img/correo-electronico.png"
-                            alt="mail"></a>
-                    <a href="#"><img src="../assets/img/llamar.png" alt="phone"></a>
+                        <a href="mailto:davidsonvanegas27@gmail.com"><img src="/img/correo-electronico.png"
+                                alt="mail"></a>
+                        <a href="#"><img src="/img/llamar.png" alt="phone"></a>
                     </div>
                 </article>
 
                 <article class="col-md-3 box-agents">
-                    <img src="../assets/img/agente2.jpg" alt="nuestros agentes" class="agente">
+                    <img src="/img/agente2.jpg" alt="nuestros agentes" class="agente">
                     <h5>Gloria Quintero</h5>
                     <span>Contadora</span>
                     <p>
@@ -501,14 +439,14 @@
                         office-ph: 84098324
                     </p>
                     <div>
-                        <a href="mailto:davidsonvanegas27@gmail.com"><img src="../assets/img/correo-electronico.png"
-                            alt="mail"></a>
-                    <a href="#"><img src="../assets/img/llamar.png" alt="phone"></a>
+                        <a href="mailto:davidsonvanegas27@gmail.com"><img src="/img/correo-electronico.png"
+                                alt="mail"></a>
+                        <a href="#"><img src="/img/llamar.png" alt="phone"></a>
                     </div>
                 </article>
 
                 <article class="col-md-3 box-agents">
-                    <img src="../assets/img/agente4.jpg" alt="nuestros agentes" class="agente">
+                    <img src="/img/agente4.jpg" alt="nuestros agentes" class="agente">
                     <h5>Sebastian Gonzales</h5>
                     <span>Analista</span>
                     <p>
@@ -517,17 +455,18 @@
                         office-ph: 84098324
                     </p>
                     <div>
-                        <a href="mailto:davidsonvanegas27@gmail.com"><img src="../assets/img/correo-electronico.png"
-                            alt="mail"></a>
-                    <a href="#"><img src="../assets/img/llamar.png" alt="phone"></a>
+                        <a href="mailto:davidsonvanegas27@gmail.com"><img src="/img/correo-electronico.png"
+                                alt="mail"></a>
+                        <a href="#"><img src="/img/llamar.png" alt="phone"></a>
                     </div>
                 </article>
             </div>
             <a class="viewAgents" href="#">View all agents</a>
         </section>
     </main>
+
     <footer>
-        <p>Copyright &copy;2021 | Sky Consultants Realty & Property Management, LLC. All rights reserved.</p>
+        <p>Copyright &copy;2023 | Sky Consultants. All rights reserved.</p>
     </footer>
 </body>
 

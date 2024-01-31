@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,windows,linux,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,windows,linux,macos
+# Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,windows,macos,linux
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,windows,macos,linux
 
 ### Linux ###
 *~
@@ -234,7 +234,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,windows,linux,macos
+# End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,windows,macos,linux
 
-# code
+## visual
 .editorconfig

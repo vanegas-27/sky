@@ -50,6 +50,10 @@ img {
     transform: scale(1.1);
 }
 
+.menuHam-list{
+    display: none;
+}
+
 
 .container-redes img {
     width: 2rem;
@@ -214,6 +218,8 @@ nav ul li {
 .conatiner-carts-casas {
     border-top: 1px solid var(--black)54;
     padding-top: 2rem;
+    max-width: 90%;
+    margin: 0px auto;
 }
 
 .conatiner-carts-casas .precio {
@@ -374,7 +380,7 @@ nav ul li {
 
 .container-follow article:hover {
     translate: 0px -20px;
-    transform: scale(1.1);
+    transform: scale(.90);
     transition: all .40s ease;
     color: var(--orange);
 }
@@ -424,7 +430,7 @@ nav ul li {
 
 /*banner*/
 .banner-property {
-    background-image: url(../../assets/img/bnnrglb-parllx.jpeg);
+    background-image: url(../img/bnnrglb-parllx.jpeg);
     background-attachment: fixed;
     height: 70vh;
     background-position: top;
@@ -756,6 +762,8 @@ footer{
     padding: 20px 0px;
 }
 
+
+
 @media(max-width:978px) {
 
     .inactive {
@@ -764,10 +772,55 @@ footer{
 
     .menuHam{
         width: 100%;
+        position: relative;
     }
 
     .menuHam span {
         display: block;
+    }
+
+    .menuHam-list{
+        display: block;
+        position: absolute;
+        top: 60px;
+        background-color: var(--azul);
+        width: 100vw;
+        left: -30px;
+        height: 100vh;
+        transition: all .30s ease-in-out;
+    }
+
+    .menuHam-list .navbar{
+        height: 60%;
+        line-height: 13px;
+    }
+
+    .menuHam-list .navbar li{
+        display: table;
+        margin: 20px 10px;
+        padding: 8px 15px;
+        border-radius: 7px;
+        transition: all .30s ease-in-out;
+    }
+
+    .menuHam-list .navbar li:hover{
+        background-color: var(--orange);
+        transform: scale(.90);
+    }
+
+    .menuHam .navRedes a{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .menuHam .navRedes li:hover{
+        transform: scale(1.5);
+        transition: all .30s ease-in-out;
+    }
+
+    .menuHam .navRedes img{
+        width: 20px;
+        cursor: pointer;
     }
 
     .containerBase {
