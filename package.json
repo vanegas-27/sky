@@ -4,7 +4,7 @@
   "description": "software diseñado para el divulgar diferentes sitios del mundo para pasar un rato agradable",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./servidor.js"
   },
   "repository": {
     "type": "git",

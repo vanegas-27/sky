@@ -1,4 +1,13 @@
-#### apuntes de bootstrap
+# sky
+
+> para ejecutar  el proyecto en local, se debe tener instalado node.js y npm (instalación de NodeJS)
+1. Clonar o descargar este repositorio: `git clone https://github.com/vanegas-27/sky.git`
+2. Acceder a la carpeta del proyecto: `cd sky`
+3.  Instalar las dependencias del proyecto con npm: `npm install`
+4.  Ejecutar el servidor de desarrollo: `npm run dev`. El proyecto estará disponible en [http://localhost:8080](http://localhost:8080)
+
+
+## apuntes de bootstrap
 
 ## poder trabajar con columnas o filas
 se debe de especificar en el contenedor la clase (row o row-reverse) para que se pueda como
